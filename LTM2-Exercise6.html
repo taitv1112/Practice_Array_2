@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     let soPhanTu = parseInt(prompt(" Nhập số phần tử mảng a: "));
+     let intNumber = new Array(soPhanTu);
+     for(let i=0;i<intNumber.length;i++){
+         intNumber[i] = prompt("Nhập giá trị thứ: " + i + "của mảng a: ");
+     }
+     document.write(intNumber + "</br>");
+     let a=["-"];
+     let b= ["_"]
+     for(let i=0;i<intNumber.length;i++){
+         if(a==intNumber[i]){
+             intNumber[i] = b
+         }
+     }
+     document.write(intNumber + "</br>");
+ </script>
+</body>
+</html>

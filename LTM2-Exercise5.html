@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let soPhanTuA = parseInt(prompt(" Nhập số phần tử mảng a: "));
+        let soPhanTuB = parseInt(prompt(" Nhập số phần tử mảng b: "));
+        let intNumberA = new Array(soPhanTuA);
+        let intNumberB = new Array(soPhanTuB);
+        for(let i=0;i<intNumberA.length;i++){
+            intNumberA[i] = prompt("Nhập giá trị thứ: " + i + "của mảng a: ");
+        }
+        document.write(intNumberA + "</br>");
+        for(let i=0;i<intNumberB.length;i++){
+            intNumberB[i] = prompt("Nhập giá trị thứ: " + i + "của mảng B: ");
+        }
+        document.write(intNumberA + "</br>");
+        document.write(JSON.stringify(intNumberA)==JSON.stringify(intNumberB));
+    </script>
+</body>
+</html>
